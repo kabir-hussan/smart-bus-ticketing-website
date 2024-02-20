@@ -2,36 +2,41 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-.font-raleway{
+.font-raleway {
     font-family: "Raleway", sans-serif;
 }
-.font-inter{
+
+.font-inter {
     font-family: "Inter", sans-serif;
 }
+
 /* menu styles */
-.menu li{
+.menu li {
     font-size: 1.25rem;
     font-weight: 500;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* container styles */
-.container{
+.container {
     width: 80%;
     max-width: 1160px;
     margin: 0 auto;
 }
 
-.banner{
+.banner {
     background-image: url(../images/banner.png);
     position: relative;
 }
-.card-container{
+
+.card-container {
     position: absolute;
     bottom: -60px;
     left: 10%;
     right: 10%;
 }
+

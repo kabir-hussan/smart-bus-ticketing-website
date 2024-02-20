@@ -1,105 +1,239 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Bus Ticketing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Bus Ticketing</title>
 
-    <!-- daisyUI and tailwind css -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisyUI and tailwind css -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- font awesome -->
+  <!-- font awesome -->
 
-    <!-- css link -->
-    <link rel="stylesheet" href="styles/style.css">
+  <!-- css link -->
+  <link rel="stylesheet" href="styles/style.css">
 
 </head>
 
 <body>
-    <header class="container mx-auto my-8 font-raleway">
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Destination</a></li>
-                        <li><a>Search</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-4xl font-extrabold">B-Ticket</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a class="btn text-green-500 text-xl font-semibold">Bus</a>
-                  <img src="images/bus-icon.png" alt="">
-                </div>
-              </div>
-        </nav>
-
-        <!-- banner section -->
-        <div class="banner mt-5 px-10 w-[95%] mx-auto bg-no-repeat bg-center rounded-3xl bg-cover h-[60vh] lg:h-[90vh]">
-          <!-- text container -->
-          <div class="flex flex-col justify-center items-center h-full space-y-8">
-            <h1 class="text-white text-6xl font-extrabold">End-to-End Travel With <br>
-            <h1 class="text-green-500 text-6xl font-extrabold">Ena Paribahan</h1>
-            </h1>
-            <p class="text-center text-white">
-              Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
-            </p>
-            <button class="bg-[#1DD100] text-xl font-semibold p-4 rounded-lg">Buy Tickets</button>
+  <header class="container mx-auto my-8 font-raleway">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
           </div>
+          <a class="btn btn-ghost text-4xl font-extrabold">B-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn text-green-500 text-xl font-semibold">Bus
+            <img src="images/bus-icon.png" alt="">
+          </a>
+        </div>
+      </div>
+    </nav>
 
-          <!-- card container section -->
-          <div class="card-container font-inter flex justify-center items-center gap-10">
-            <!-- card 1 -->
-            <div class="card card-side bg-white border-b-4 border-solid border-[#1DD100] rounded-3xl">
-              <figure><img src="images/people.png" alt="Movie"/></figure>
-              <div class="card-body">
-                <h2 class="card-title text-4xl font-bold">500K+</h2>
-                <p>Registered users</p>
+    <!-- banner section -->
+    <div class="banner mt-5 px-10 w-[95%] mx-auto bg-no-repeat bg-center rounded-3xl bg-cover h-[60vh] lg:h-[90vh]">
+      <!-- text container -->
+      <div class="flex flex-col justify-center items-center h-full space-y-8">
+        <h1 class="text-white text-6xl font-extrabold">End-to-End Travel With <br>
+          <h1 class="text-green-500 text-6xl font-extrabold">Ena Paribahan</h1>
+        </h1>
+        <p class="text-center text-white w-1/2">
+          Yes, you can run unit tests and view the results directly within the app. The integrated testing features
+          allow for a streamlined .
+        </p>
+        <button class="bg-[#1DD100] text-xl font-semibold p-4 rounded-lg">Buy Tickets</button>
+      </div>
+
+      <!-- card container section -->
+      <div class="card-container hidden font-inter flex justify-center items-center gap-10 lg:visible">
+        <!-- card 1 -->
+        <div class="card card-side bg-white border-b-4 border-solid border-[#1DD100] rounded-3xl px-2">
+          <figure><img src="images/people.png" alt="Movie" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-4xl font-bold">500K+</h2>
+            <p>Registered users</p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card card-side bg-white border-b-4 border-solid border-[#1DD100] rounded-3xl px-2">
+          <figure><img src="images/ticket-cupon.png" alt="Movie" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-4xl font-bold">1.7 Lacs</h2>
+            <p>Tickets Sold</p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card card-side bg-white border-b-4 border-solid border-[#1DD100] rounded-3xl px-2">
+          <figure><img src="images/stoppage.png" alt="Movie" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-4xl font-bold">80K+</h2>
+            <p>Rental Partners</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="my-36">
+    <!-- best offers section -->
+    <section class="">
+      <h1 class="font-ralway text-4xl font-semibold text-[#030712] text-center">Best Offers For You</h1>
+
+      <!-- divider container -->
+      <div class="flex justify-center items-center mt-10 gap-x-4">
+        <!-- card 1 -->
+        <div>
+          <div class="flex flex-col w-1/3 lg:flex-row">
+            <div class="grid flex-grow h-32 card bg-[#FFBF0F] rounded-box place-items-center">
+              <div class="stat w-60 font-inter">
+                <div class="stat-value">
+                  <p class="text-center">15% OFF</p>
+                </div>
+                <div class="stat-title">
+                  <p class="text-center">on your next purchase</p>
+                </div>
+                <div class="stat-desc">
+                  <p class="text-center">use by January 2024</p>
+                </div>
               </div>
             </div>
-            <!-- card 2 -->
-            <div class="card card-side bg-white border-b-4 border-solid border-[#1DD100] rounded-3xl">
-              <figure><img src="images/ticket-cupon.png" alt="Movie"/></figure>
-              <div class="card-body">
-                <h2 class="card-title text-4xl font-bold">1.7 Lacs</h2>
-                <p>Tickets Sold</p>
-              </div>
-            </div>
-            <!-- card 3 -->
-            <div class="card card-side bg-white border-b-4 border-solid border-[#1DD100] rounded-3xl">
-              <figure><img src="images/stoppage.png" alt="Movie"/></figure>
-              <div class="card-body">
-                <h2 class="card-title text-4xl font-bold">80K+</h2>
-                <p>Rental Partners</p>
+            <div class="border-2 border-dashed border-gray-300 rounded-full"></div>
+
+            <div class="grid flex-grow h-32 card bg-[#FFBF0F] rounded-box place-items-center">
+              <div class="stat w-52 font-ralway">
+                <div class="stat-value">
+                  <p class="text-center">NEW<sub>15</sub></p>
+                </div>
+                <div class="stat-title">
+                  <p class="text-center">Coupon Code</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-    </header>
-    <main>
 
-    </main>
-    <footer>
+        <!-- card 2 -->
+        <div>
+          <div class="flex flex-col w-1/3 lg:flex-row">
+            <div class="grid flex-grow h-32 card bg-[#F78C9C] rounded-box place-items-center">
+              <div class="stat w-60 font-inter">
+                <div class="stat-value">
+                  <p class="text-center">20% OFF</p>
+                </div>
+                <div class="stat-title">
+                  <p class="text-center">on your next purchase</p>
+                </div>
+                <div class="stat-desc">
+                  <p class="text-center">use by January 2024</p>
+                </div>
+              </div>
+            </div>
+            <div class=" border-2 border-dashed border-gray-300 rounded-full"></div>
 
-    </footer>
+            <div class="grid flex-grow h-32 card bg-[#F78C9C] rounded-box place-items-center">
+              <div class="stat w-52 font-raleway">
+                <div class="stat-value">
+                  <p class="text-center">Couple 20</p>
+                </div>
+                <div class="stat-title">
+                  <p class="text-center">coupon code</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <button class="bg-[#1DD100] text-xl font-semibold p-4 rounded-xl">See All Offers</button>
+      </div>
+    </section>
 
-    <!-- js file added-->
-    <script src="scripts/index.js"></script>
+    <!-- P.H Paribahan -->
+    <section class="my-16 font-raleway">
+      <div class="mb-10 border-2 border-solid border-[#1DD100]">
+      </div>
+
+      <div class="w-1/2 text-center mx-auto space-y-6">
+        <h1 class="text-4xl font-bold">P.H Paribahan</h1>
+        <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features
+          allow for a streamlined .</p>
+      </div>
+      <!-- divider container -->
+      <div class="mt-10">
+        <!-- left side -->
+        <div class=" w-2/3 px-6">
+          <div class="flex flex-row items-center justify-between">
+            <div class="card card-side">
+              <figure><img src="images/bus-logo.png" alt="Movie" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-[#030712] text-3xl font-bold">Ena Paribahan</h2>
+                <p>Click the button to watch on Jetflix app.</p>
+              </div>
+            </div>
+            <div class="">
+              <a class="btn bg-[#1DD10026] text-green-500 text-xl font-semibold">
+                <img src="images/seat-green.png" alt="">
+                <span class="font-inter">40 Seats</span>
+              </a>
+            </div>
+          </div>
+          <!-- divider bottom part -->
+          <div class="flex flex-col w-full">
+            <div class="flex flex-row justify-between items-center px-4 h-12 card">
+              <p>Route</p>
+              <p>Dhaka-Sylhet</p>
+            </div>
+            <div class="divider"></div>
+            <div class="flex flex-row justify-between items-center px-4 h-12 card ">
+              <p>Departure Time</p>
+              <p>9.00 PM</p>
+            </div>
+            <div class="divider"></div>
+            <div class="flex flex-row justify-between items-center px-4 h-12 card ">
+              <button class="bg-[#03071224] rounded-xl px-2 py-3 font-inter">Boarding Point - Laxmipur</button>
+              <button class="bg-[#03071224] rounded-xl px-2 py-3 font-inter">Dropping Point - Bogura</button>
+              <button class="bg-[#03071224] rounded-xl px-2 py-3 font-inter">Est. Time - 11 Hour</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- vertical divider -->
+        <!-- bottom part divider -->
+
+
+      </div>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
+
+  <!-- js file added-->
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>
