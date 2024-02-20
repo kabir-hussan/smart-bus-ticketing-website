@@ -8,9 +8,23 @@
 .font-inter{
     font-family: "Inter", sans-serif;
 }
+/* menu styles */
+.menu li{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
 /* container styles */
 .container{
     width: 80%;
     max-width: 1160px;
+    margin: 0 auto;
+}
 
+.banner{
+    background-image: url(../images/banner.png);
 }
