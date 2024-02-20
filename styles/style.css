@@ -40,3 +40,11 @@
     right: 10%;
 }
 
+.kbd{
+    background-color: rgb(247, 248, 248);
+    padding: 20px 40px;
+    color: rgba(3, 7, 18, 0.5);
+    font-weight: 500;
+    font-size: 1.25rem;
+    border: none;
+}
