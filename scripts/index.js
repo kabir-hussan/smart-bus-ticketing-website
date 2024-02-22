@@ -61,7 +61,6 @@ for(const seat of allSeat)
                     btnEnable(applyBtn);
                     coupon.removeAttribute('disabled');
                 } 
-
                 // enable next button
                 if(phoneNumber.value) btnEnable(nextBtn);
             }
@@ -73,7 +72,7 @@ for(const seat of allSeat)
 }
 
 phoneNumber.addEventListener('keyup', function(){
-    if(intSeatNumber >= 1 ) btnEnable(nextBtn);
+    if(intSeatNumber >= 1 && phoneNumber.value) btnEnable(nextBtn);
 })
 
 applyBtn.addEventListener('click', function(){
