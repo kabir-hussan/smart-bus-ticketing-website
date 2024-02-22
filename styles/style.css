@@ -47,4 +47,35 @@
     font-weight: 500;
     font-size: 1.25rem;
     border: none;
+    cursor: pointer;
+}
+#next-btn{
+    background-color: #bdbdbd;
+    color: #fff;
+}
+#apply-btn{
+    background-color: #bdbdbd;
+    color: #fff;
+}
+
+.ball-up{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 99;
+    position: absolute;
+    top: -22px;
+    left: 221px;
+}
+.ball-bottom {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 99;
+    position: absolute;
+
+    bottom: -18px;
+    left: 221px;
 }

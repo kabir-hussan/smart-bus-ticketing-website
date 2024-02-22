@@ -65,7 +65,10 @@
           Yes, you can run unit tests and view the results directly within the app. The integrated testing features
           allow for a streamlined .
         </p>
-        <button class="bg-[#1DD100] text-xl font-semibold p-4 rounded-lg">Buy Tickets</button>
+        <a href="#scroll">
+          <button class="bg-[#1DD100] text-xl font-semibold p-4 rounded-lg">Buy Tickets
+          </button>
+        </a>
       </div>
 
       <!-- card container section -->
@@ -106,7 +109,7 @@
       <!-- divider container -->
       <div class="flex justify-center items-center mt-10 gap-x-4">
         <!-- card 1 -->
-        <div>
+        <div class="relative">
           <div class="flex flex-col w-1/3 lg:flex-row">
             <div class="grid flex-grow h-32 card bg-[#FFBF0F] rounded-box place-items-center">
               <div class="stat w-60 font-inter">
@@ -121,12 +124,13 @@
                 </div>
               </div>
             </div>
-            <div class="border-2 border-dashed border-gray-300 rounded-full"></div>
-
+            <div class="border border-white"></div>
+            <div class="ball-up"></div>
+            <div class="ball-bottom"></div>
             <div class="grid flex-grow h-32 card bg-[#FFBF0F] rounded-box place-items-center">
               <div class="stat w-52 font-ralway">
                 <div class="stat-value">
-                  <p class="text-center">NEW<sub>15</sub></p>
+                  <p class="text-center font-raleway">NEW15</p>
                 </div>
                 <div class="stat-title">
                   <p class="text-center">Coupon Code</p>
@@ -137,7 +141,7 @@
         </div>
 
         <!-- card 2 -->
-        <div>
+        <div class="relative">
           <div class="flex flex-col w-1/3 lg:flex-row">
             <div class="grid flex-grow h-32 card bg-[#F78C9C] rounded-box place-items-center">
               <div class="stat w-60 font-inter">
@@ -152,12 +156,14 @@
                 </div>
               </div>
             </div>
-            <div class=" border-2 border-dashed border-gray-300 rounded-full"></div>
+            <div class="border border-white"></div>
+            <div class="ball-up"></div>
+            <div class="ball-bottom"></div>
 
             <div class="grid flex-grow h-32 card bg-[#F78C9C] rounded-box place-items-center">
               <div class="stat w-52 font-raleway">
                 <div class="stat-value">
-                  <p class="text-center">Couple 20</p>
+                  <p class="text-center font-raleway">Couple 20</p>
                 </div>
                 <div class="stat-title">
                   <p class="text-center">coupon code</p>
@@ -173,7 +179,7 @@
     </section>
 
     <!-- P.H Paribahan -->
-    <section class="my-32 px-12 mx-auto font-raleway border-t-2 border-[#1DD100] rounded-[48px] pt-20">
+    <section id="scroll" class="my-32 px-12 mx-auto font-raleway border-t-2 border-[#1DD100] rounded-[48px] pt-20">
 
       <div class="w-1/2 text-center mx-auto space-y-6">
         <h1 class="text-4xl font-bold">P.H Paribahan</h1>
@@ -195,7 +201,7 @@
             <div class="">
               <a class="btn bg-[#1DD10026] text-green-500 text-xl font-semibold">
                 <img src="images/seat-green.png" alt="">
-                <span class="font-inter">40 Seats Left</span>
+                <span class="font-inter"><span id="left-seat">40</span> Seats Left</span>
               </a>
             </div>
           </div>
@@ -234,7 +240,7 @@
               <img src="images/fare.png" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title text-3xl font-bold">550 TK</h2>
+              <h2 class="card-title text-3xl font-bold"><span id="per-seat-price">550</span> TK</h2>
               <p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
             </div>
           </div>
@@ -278,73 +284,73 @@
         <div class="mt-16 font-inter space-y-6">
           <div class="flex justify-between gap-1 my-1 w-full">
             <kbd class="kbd">A</kbd>
-            <kbd class="kbd">A1</kbd>
-            <kbd class="kbd">A2</kbd>
-            <kbd class="kbd">A3</kbd>
-            <kbd class="kbd">A4</kbd>
+            <kbd class="kbd seat-item">A1</kbd>
+            <kbd class="kbd seat-item">A2</kbd>
+            <kbd class="kbd seat-item">A3</kbd>
+            <kbd class="kbd seat-item">A4</kbd>
           </div>
           <div class="flex justify-between gap-1 my-1 w-full">
             <kbd class="kbd">B</kbd>
-            <kbd class="kbd">B1</kbd>
-            <kbd class="kbd">B2</kbd>
-            <kbd class="kbd">B3</kbd>
-            <kbd class="kbd">B4</kbd>
+            <kbd class="kbd seat-item">B1</kbd>
+            <kbd class="kbd seat-item">B2</kbd>
+            <kbd class="kbd seat-item">B3</kbd>
+            <kbd class="kbd seat-item">B4</kbd>
           </div>
           <div class="flex justify-between gap-1 my-1 w-full">
             <kbd class="kbd">C</kbd>
-            <kbd class="kbd">C1</kbd>
-            <kbd class="kbd">C2</kbd>
-            <kbd class="kbd">C3</kbd>
-            <kbd class="kbd">C4</kbd>
+            <kbd class="kbd seat-item">C1</kbd>
+            <kbd class="kbd seat-item">C2</kbd>
+            <kbd class="kbd seat-item">C3</kbd>
+            <kbd class="kbd seat-item">C4</kbd>
           </div>
           <div class="flex justify-between gap-1 my-1 w-full">
             <kbd class="kbd">D</kbd>
-            <kbd class="kbd">D1</kbd>
-            <kbd class="kbd">D2</kbd>
-            <kbd class="kbd">D3</kbd>
-            <kbd class="kbd">D4</kbd>
+            <kbd class="kbd seat-item">D1</kbd>
+            <kbd class="kbd seat-item">D2</kbd>
+            <kbd class="kbd seat-item">D3</kbd>
+            <kbd class="kbd seat-item">D4</kbd>
           </div>
           <div class="flex justify-between gap-1 my-1 w-full">
             <kbd class="kbd">E</kbd>
-            <kbd class="kbd">E1</kbd>
-            <kbd class="kbd">E2</kbd>
-            <kbd class="kbd">E3</kbd>
-            <kbd class="kbd">E4</kbd>
+            <kbd class="kbd seat-item">E1</kbd>
+            <kbd class="kbd seat-item">E2</kbd>
+            <kbd class="kbd seat-item">E3</kbd>
+            <kbd class="kbd seat-item">E4</kbd>
           </div>
           <div class="flex justify-between gap-1 my-1 w-full">
             <kbd class="kbd">F</kbd>
-            <kbd class="kbd">F1</kbd>
-            <kbd class="kbd">F2</kbd>
-            <kbd class="kbd">F3</kbd>
-            <kbd class="kbd">F4</kbd>
+            <kbd class="kbd seat-item">F1</kbd>
+            <kbd class="kbd seat-item">F2</kbd>
+            <kbd class="kbd seat-item">F3</kbd>
+            <kbd class="kbd seat-item">F4</kbd>
           </div>
           <div class="flex justify-between gap-1 my-1 w-full">
             <kbd class="kbd">G</kbd>
-            <kbd class="kbd">G1</kbd>
-            <kbd class="kbd">G2</kbd>
-            <kbd class="kbd">G3</kbd>
-            <kbd class="kbd">G4</kbd>
+            <kbd class="kbd seat-item">G1</kbd>
+            <kbd class="kbd seat-item">G2</kbd>
+            <kbd class="kbd seat-item">G3</kbd>
+            <kbd class="kbd seat-item">G4</kbd>
           </div>
           <div class="flex justify-between gap-1 my-1 w-full">
             <kbd class="kbd">H</kbd>
-            <kbd class="kbd">H1</kbd>
-            <kbd class="kbd">H2</kbd>
-            <kbd class="kbd">H3</kbd>
-            <kbd class="kbd">H4</kbd>
+            <kbd class="kbd seat-item">H1</kbd>
+            <kbd class="kbd seat-item">H2</kbd>
+            <kbd class="kbd seat-item">H3</kbd>
+            <kbd class="kbd seat-item">H4</kbd>
           </div>
           <div class="flex justify-between gap-1 my-1 w-full">
             <kbd class="kbd">I</kbd>
-            <kbd class="kbd">I1</kbd>
-            <kbd class="kbd">I2</kbd>
-            <kbd class="kbd">I3</kbd>
-            <kbd class="kbd">I4</kbd>
+            <kbd class="kbd seat-item">I1</kbd>
+            <kbd class="kbd seat-item">I2</kbd>
+            <kbd class="kbd seat-item">I3</kbd>
+            <kbd class="kbd seat-item">I4</kbd>
           </div>
           <div class="flex justify-between gap-1 my-1 w-full">
             <kbd class="kbd">J</kbd>
-            <kbd class="kbd">J1</kbd>
-            <kbd class="kbd">J2</kbd>
-            <kbd class="kbd">J3</kbd>
-            <kbd class="kbd">J4</kbd>
+            <kbd class="kbd seat-item">J1</kbd>
+            <kbd class="kbd seat-item">J2</kbd>
+            <kbd class="kbd seat-item">J3</kbd>
+            <kbd class="kbd seat-item">J4</kbd>
           </div>
         </div>
       </div>
@@ -353,40 +359,40 @@
       <!-- <div class="border-2 border-dashed border-[#0307124D] h-[1120px] font-inter"></div> -->
       <!-- right side -->
       <div class="w-[40%] mx-auto font-inter border-l-2 border-dashed border-[#0307124D]">
-        <div class="flex flex-row justify-between items-center h-8 px-2 card">
+        <div class="flex flex-row justify-between items-center h-8 px-2 mb-16 card">
           <h1 class="text-2xl font-semibold">Select Your Seat</h1>
         </div>
         <div class="divider"></div>
         <div class="px-3">
           <div class="px-10 mx-auto">
             <div class="flex flex-row justify-between items-center px-4 h-8 card ">
-              <span class="font-medium text-base">Seat<sup><button class="bg-[#1DD100] px-3 py-2 rounded-lg text-white font-bold">2</button></sup></span>
+              <h2 class="font-medium text-base">Seat<sup><button id="seat-number-btn" class="bg-[#1DD100] px-3 py-2 rounded-lg text-white font-bold">0</button></sup></h2>
               <button class="font-medium rounded-xl px-4 py-3 font-inter">Class</button>
               <button class="font-medium rounded-xl px-2 py-3 font-inter">Price</button>
             </div>
             <div class="divider"></div>
-  
-            <div class="flex flex-row justify-between items-center px-4 card ">
-              <h1>C2</h1>
-              <h1>Economy</h1>
-              <h1>550</h1>
+            <!-- price container -->
+            <div id="seclected-seat-price-container">
+              
             </div>
             <div class="divider"></div>
-            <div class="flex flex-row justify-between items-center px-4 h-8 card ">
-              <h1 class="font-medium">Total Price</h1>
-              <h1 class="font-medium">BDT <span></span>550</h1>
+            <div id="discount-and-total">
+              <div class="flex flex-row justify-between items-center px-4 h-8 card ">
+                <h1 class="font-medium">Total Price</h1>
+                <h1 class="font-medium">BDT <span id="total-price">0</span></h1>
+              </div>
             </div>
             <!-- input field -->
-            <div class="pt-8">
+            <div id="input-field" class="pt-8">
               <label class="input  flex justify-between items-center">
-                <input type="text" class="" placeholder="Have any coupon?" />
-                <span class="bg-[#1DD100] px-5 py-2 rounded-lg text-white">Apply</span>
+                <input id="coupon-text" type="text" class="" placeholder="Have any coupon?" disabled/>
+                <button id="apply-btn" class="bg-[#1DD100] px-5 py-2 rounded-lg text-white" disabled>Apply</button>
               </label>
             </div>
             <!-- grand total-->
             <div class="flex flex-row justify-between items-center px-4 h-8 card pt-8">
               <h1 class="font-medium">Grand Total</h1>
-              <h1 class="font-medium">BDT <span></span>1100</h1>
+              <h1 class="font-medium">BDT <span id="grand-total">0</span></h1>
             </div>
           </div>
           <!-- passenger info -->
@@ -401,7 +407,7 @@
               <fieldset>
                 <legend class="font-semibold pb-3">Phone Number<sup>*</sup></legend>
                 <div class="mb-4">
-                  <input type="number" class="p-2 w-full" placeholder="Enter your number:" required>
+                  <input id="phone-num" type="number" class="p-2 w-full" placeholder="Enter your number:" required>
                 </div>
               </fieldset>
               <fieldset>
@@ -411,7 +417,7 @@
                 </div>
               </fieldset>
               <div class="mt-4">
-                <button type="submit" class="bg-[#1DD100] text-white px-4 py-3 w-full rounded-lg">Next</button>
+                <button onclick="my_modal_5.showModal()" id="next-btn" type="submit" class="px-4 py-3 w-full rounded-lg" disabled>Next</button>
               </div>
             </form>
             <div class="flex flex-row justify-center gap-10 items-center px-4 card">
@@ -460,6 +466,55 @@
     </div>
 
   </footer>
+  <!-- thank you section -->
+<!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="card w-1/2 bg-base-100 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src="images/success.png" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title text-[#27AE60]">SUCCESS</h2>
+      <p class="py-6 px-20">Thank you for Booking Our Bus Seats. 
+        We are working hard to find the best service and deals for you. 
+        Shortly you will find a confirmation in your email.</p>
+      <div class="card-actions">
+        <button onclick="location.reload()" class="bg-[#27AE60] rounded-full px-16 py-3 text-white text-xl">Continue</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- user cannot select one seat multiple time -->
+<dialog id="multiple-seat-warning" class="modal">
+  <div class="modal-box text-center py-10 w-[30%]">
+    <h3 class="font-bold  text-2xl text-red-600">Warning!</h3>
+    <p class="py-4">Your can not select a seat multiple time.</p>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+<!-- warning while seat selected more than 4 -->
+<dialog id="seat-limit-warning" class="modal">
+  <div class="modal-box text-center py-10 w-[30%]">
+    <h3 class="font-bold  text-2xl text-red-600">Warning!</h3>
+    <p class="py-4">You can not buy more than 4 seat.</p>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+<!-- invalid coupon warning -->
+<dialog id="invalid-coupon-warning" class="modal">
+  <div class="modal-box text-center py-10 w-[30%]">
+    <h3 class="font-bold  text-2xl text-red-600">Warning!</h3>
+    <p class="py-4">Your Coupon Code is not Valid. </p>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
 
   <!-- js file added-->
   <script src="scripts/index.js"></script>
